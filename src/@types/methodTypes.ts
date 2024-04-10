@@ -6,7 +6,8 @@ const METHODS = {
 	DELETE: "DELETE",
 } as const;
 
-export type METHODS = typeof METHODS[keyof typeof METHODS];
+export type { METHODS };
+export type METHOD = typeof METHODS[keyof typeof METHODS];
 
 
 
